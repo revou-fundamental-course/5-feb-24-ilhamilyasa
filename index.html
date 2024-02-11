@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Konverter Suhu</h1>
+        <form id="tempForm">
+            <label for="tempInput">Masukkan Suhu:</label>
+            <input type="number" id="tempInput" placeholder="Masukkan suhu..." required>
+            <select id="tempScale">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            <button type="button" onclick="convertTemp()">Konversi</button>
+        </form>
+        <div id="result"></div>
+        <div id="calculation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

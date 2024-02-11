@@ -1,0 +1,48 @@
+body {
+    background-image:url('bgMtk.jpg'); /* Warna latar belakang */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #dcdad3; /* Warna latar belakang kotak */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+}
+
+input[type="number"] {
+    width: calc(100% - 20px); /* Lebar input dikurangi margin */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+select, button {
+    width: calc(100% - 20px); /* Lebar input dikurangi margin */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s; /* Transisi perubahan warna saat hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+#result {
+    margin-top: 10px;
+}
+
+#calculation {
+    margin-top: 20px;
+    border-top: 1px solid #000000;
+    padding-top: 10px;
+}
