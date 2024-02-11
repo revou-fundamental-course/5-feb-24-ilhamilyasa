@@ -12,8 +12,9 @@ function convertTemp() {
     } else {
         // Konversi dari Fahrenheit ke Celsius: (Fahrenheit - 32) * 5/9
         result = (tempInput - 32) * 5/9;
-        calculationText = tempInput + " Fahrenheit - 32) * (5/9) = " + result + " Celsius";
-        document.getElementById('result').innerHTML = tempInput + " Fahrenheit = " + result + " Celsius";
+        var roundedResult = Math.round(result * 10) / 10;
+        calculationText = tempInput + " Fahrenheit - 32) * (5/9) = " + roundedResult + " Celsius";
+        document.getElementById('result').innerHTML = tempInput + " Fahrenheit = " + roundedResult + " Celsius";
     }
 
     document.getElementById('calculation').innerHTML = "Kalkulasi: " + calculationText;
